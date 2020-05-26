@@ -1,0 +1,58 @@
+button{
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 3px!important;
+    border: 1.5px solid #007bff;
+    padding: 8px 20px;
+    font-weight: 500;
+    margin-top: 5%!important;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* .selectPan{
+
+} */
+
+.uploadSuccessText{
+    margin-top: 1rem;
+    color: #28a745!important;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.uploadBtn{
+    background-color: #007bff;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.verifyStatus{
+    color: #10cd04;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.verifyStatus > h2{
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.alert-dismissible .close{
+    margin: 0!important;
+}
+
+.otpWrapper > div{
+    padding: 10px;
+    background-color: #e8e6e6;
+    /* width: 40px;
+    height: 40px; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 10px;
+    line-height: 20px;
+}
