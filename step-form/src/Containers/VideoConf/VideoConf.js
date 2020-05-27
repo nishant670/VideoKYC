@@ -95,6 +95,7 @@ function JitsiMeetComponent() {
          id="jitsi-container"
          style={jitsiContainerStyle}
         />
+        
        </div>
         
     </React.Fragment>

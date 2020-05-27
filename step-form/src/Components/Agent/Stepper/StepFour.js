@@ -13,7 +13,7 @@ const StepThree = props => {
     return (
         <div>
             <div className="agentViewBody">
-            <p><strong>Summary of yoyr actions</strong></p>
+            <p><strong>Summary of your actions</strong></p>
             
             <div>
                 <div><p>Aadhar Face Match : Verified</p></div>

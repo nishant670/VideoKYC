@@ -10,18 +10,26 @@ const StepTwo = props => {
         props.verifyHandler();
     }
 
+    // const panImageCapture = () => {
+    //     let panImageWrapper = document.getElementsByClassName("imageCaptureWrapper");
+    //     const img = ""
+    //     panImageWrapper.append(img)
+    // }
+
     return (
         <div>
             <div className="agentViewBody">
             <p><strong>Capture User's PAN</strong></p>
             <div className="imageCaptureWrapper">
-                <img src="" />
+                {props.imageShow ?
+                <img src='https://upload.wikimedia.org/wikipedia/commons/0/05/Favicon_250x250.png' alt='' />
+                 : null}
             </div>
-            <button>Capture PAN</button>
+            <button onClick={props.panImageCapture}>Capture PAN</button>
             <div>
-                <p>Entered PAN : CQVPM5253N</p>
-                <p>PAN from OCR : CQVPM5253N</p>
-                <p>Match Result : Verfied</p>
+    <p>Entered PAN : {props.enteredPan}</p>
+    <p>PAN from OCR : {props.ocrPan}</p>
+    <p>Match Result : {props.verified}</p>
             </div>
             </div>
             <div className="agentViewButtons">

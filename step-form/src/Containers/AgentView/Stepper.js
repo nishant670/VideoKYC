@@ -8,12 +8,26 @@ import StepFour from '../../Components/Agent/Stepper/StepFour';
 export class Stepper extends Component {
 
     state = {
-        step : 1
+        step : 1,
+        imageShow : false,
+        profileImage : false
     }
 
     verifyHandler = () => {
         this.setState({
             step : this.state.step + 1
+        })
+    }
+
+    panImageCapture = () => {
+        this.setState({
+            imageShow : true
+        })
+    }
+
+    profileImageCapture = () => {
+        this.setState({
+            profileImage : true
         })
     }
 
@@ -32,13 +46,20 @@ export class Stepper extends Component {
         case 2 :
         return (
             <StepTwo
-            verifyHandler={this.verifyHandler} />
+            verifyHandler={this.verifyHandler}
+            enteredPan={this.props.enteredPan}
+                    ocrPan={this.props.ocrPan}
+                    verified={this.props.verified}
+                    panImageCapture={this.panImageCapture}
+                    imageShow={this.state.imageShow} />
             
         )
         case 3 :
         return (
             <StepThree
-            verifyHandler={this.verifyHandler} />
+            verifyHandler={this.verifyHandler}
+            profileImageCapture={this.profileImageCapture}
+            profileImage={this.state.profileImage} />
         )
         case 4 :
         return (

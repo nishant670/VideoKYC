@@ -15,7 +15,7 @@ const StepThree = props => {
             <div className="agentViewBody">
             <p><strong>Capture User's Photo</strong></p>
             <p>Capture the user photo and match it with Aadhar card photo</p>
-            <div className="allImagesWrapper">
+            {/* <div className="allImagesWrapper">
                 <div>
                     <img src="" />
                 </div>
@@ -25,8 +25,13 @@ const StepThree = props => {
                 <div>
                     <img src="" />
                 </div>
+            </div> */}
+            <div className="imageCaptureWrapper">
+                {props.profileImage ?
+                <img src='https://upload.wikimedia.org/wikipedia/commons/0/05/Favicon_250x250.png' alt='' />
+                 : null}
             </div>
-            <button>Capture Photo</button>
+            <button onClick={props.profileImageCapture}>Capture Photo</button>
             <div>
                 <p>Aadhar Face Match : Verified</p>
                 <p>PAN Face Match : Verified</p>
